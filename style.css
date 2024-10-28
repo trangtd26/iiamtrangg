@@ -1,0 +1,308 @@
+/* Thiết lập lại cơ bản */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    
+}
+/* Tiêu đề và thanh điều hướng */   
+header {
+    background-color: #050505;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+nav ul li {
+    margin: 0 15px;
+}
+nav ul li a {
+    color: #9f5e96;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+}
+nav ul li a:hover {
+    background-color: #9d9d9d;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('/Ảnh/2.png'); /* Use the uploaded image here */
+    background-size: cover;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 250px 20px;
+}
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.2rem;
+    
+}
+
+/* Kiểu dáng phần */
+section {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+    text-align: left;
+}
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #ae65a4;
+}
+.content-box {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+.box {
+    flex: 1 1 250px;
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+}
+.box:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+    background-color: #000000;
+    color: #ae65a4;
+    text-align: center;
+    padding: 20px;
+}
+
+/*Phần ảnh trong Introduce*/
+.pictures{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    display: grid;
+    grid-template-areas:
+    "aa bb bb"
+    "aa cc dd";
+    margin: 50px 0px;
+    color: #ae65a4;
+}
+
+.self-pic-1{
+    grid-area: aa;
+    max-width: 500px;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+.self-pic-1 img{
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.scenery{
+    grid-area: bb;
+    max-width: 100%;
+    max-height: 270px;
+    overflow: hidden;
+}
+
+.scenery img{
+    max-width: 650px;
+}
+
+.study{
+    grid-area: cc;
+    max-width: 310px;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.study img{
+    max-width: 310px;
+}
+
+.food{
+    grid-area: dd;
+    max-width: 310px;
+    max-height: 200px;
+    overflow: hidden;
+}
+
+.food img{
+    max-width: 310px;
+}
+/*Skills*/
+.logo-figma, .logo-illustrator, .logo-html, .logo-css{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.logo-figma img, .logo-illustrator img, .logo-html img, .logo-css img{
+    max-width: 50px;
+    max-height: 50px;
+}
+
+.logo-figma img{
+    border-radius:8px;
+}
+
+/*Projects*/
+.project-image{
+    max-width: 200px;
+}
+
+.project-image img{
+    max-width: 200px;
+}
+
+.project-paragraph{
+    margin-top: -5.5px;
+    margin-left: 20px;
+}
+
+.heading-project{
+    font-size: 20px;
+    max-width: 721px;
+    margin-bottom: 10px;
+}
+
+.project-paragraph-line{
+    font-size: 15px;
+}
+
+.project-paragraph-line li {
+    padding-left: 20px; /* Khoảng cách cho các mục */
+}    
+    
+.project-paragraph-line li::before {
+    font-size: 40px; /* Kích thước bullet */
+    top: -28.5px;
+}
+
+/*Footer*/
+.footer{
+    font-size: 15px;
+    height: 60px;
+    margin-top: 50px;
+}
+
+
+
+/*Tablet or Small laptop screen*/
+@media (min-width: 1024px) and (max-width: 1410px){
+/*Phần ảnh trong Introduce*/    
+.self-pic-1{
+    max-width: 500px;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.self-pic-1 img{
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.scenery{
+    max-width: 100%;
+    max-height: 270px;
+}
+
+.scenery img{
+    max-width: 650px;
+}
+
+.study{
+    max-width: 310px;
+    max-height: 200px;
+}
+
+.study img{
+    max-width: 310px;
+}
+
+.food{
+    max-width: 310px;
+    max-height: 200px;
+}
+
+.food img{
+    max-width: 310px;
+}
+
+/*Skills*/
+.logo-figma, .logo-illustrator, .logo-html, .logo-css{
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.logo-figma img, .logo-illustrator img, .logo-html img, .logo-css img{
+    max-width: 150px;
+    max-height: 150px;
+}
+
+.logo-figma img{
+    border-radius:8px;
+}
+
+/*Projects*/
+.project-image{
+    max-width: 200px;
+}
+
+.project-image img{
+    max-width: 200px;
+}
+
+.project-paragraph{
+    margin-top: -5.5px;
+    margin-left: 20px;
+}
+
+.heading-project{
+    font-size: 30px;
+    max-width: 721px;
+    margin-bottom: 10px;
+}
+
+.project-paragraph-line{
+    font-size: 20px;
+}
+
+.project-paragraph-line li {
+    padding-left: 25px; /* Khoảng cách cho các mục */
+}    
+    
+.project-paragraph-line li::before {
+    font-size: 50px; /* Kích thước bullet */
+    top: -37px;
+}
+
+/*Footer*/
+.footer{
+    font-size: 15px;
+    height: 60px;
+    margin-top: 50px;
+}

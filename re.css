@@ -1,0 +1,84 @@
+/* Header Styling */
+header {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+p, ul {
+    
+    text-align: left;
+}
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;  /* Căn chỉnh mục menu và biểu tượng mạng xã hội ngang nhau */
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding:10px; /* Khoảng đệm để căn chỉnh */
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Phần biểu tượng mạng xã hội trong Header */
+.social-media {
+    display: flex;
+    align-items: center;
+    gap: 10px;  /* Khoảng cách giữa các biểu tượng */
+}
+
+.social-icon {
+    color: #fff;
+    font-size: 10px;
+    transition: color 0.3s;
+    padding: 10px;  /* Thêm khoảng đệm để căn ngang */
+}
+
+.social-icon:hover {
+    color: #ffd700;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #000;
+}
+
+.led-effect img {
+    max-width: 300px;
+    border-radius: 10px;
+    transition: 0.3s;
+    box-shadow: 0 0 10px rgba(11, 149, 149, 0.5),
+                0 0 20px rgba(0, 255, 255, 0.5),
+                0 0 30px rgba(0, 255, 255, 0.5),
+                0 0 40px rgba(0, 255, 255, 0.5),
+                0 0 50px rgba(0, 255, 255, 0.5),
+                0 0 60px rgba(0, 255, 255, 0.5),
+                0 0 70px rgba(0, 255, 255, 0.5);
+}
+
+.led-effect img:hover {
+    transform: scale(1.05); /* Zoom nhẹ khi hover */
+    filter: brightness(1.2); /* Tăng độ sáng khi hover */
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7),
+                0 0 40px rgba(0, 255, 255, 0.7),
+                0 0 60px rgba(0, 255, 255, 0.7),
+                0 0 80px rgba(0, 255, 255, 0.7),
+                0 0 100px rgba(0, 255, 255, 0.7);
+}
